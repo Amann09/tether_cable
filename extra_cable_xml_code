@@ -1,0 +1,643 @@
+            <link name="cylinder_11">
+                <pose relative_to='sphere_10'>0 0 -0.1025 0 0 0</pose>
+                <visual name='cylinder_11 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='cylinder_11 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <inertial>
+                    <mass>0.001</mass>
+                    <inertia>
+                        <ixx>0.01</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.01</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.01</izz>
+                    </inertia>
+                </inertial>
+            </link>
+            <joint name="sphere_10_to_cylinder_11" type="universal">
+                <pose relative_to='sphere_10'>0 0 0 0 0 0</pose>
+                <child>cylinder_11</child>
+                <parent>sphere_10</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+            <link name="sphere_11">
+                <pose relative_to='cylinder_11'>0 0 -0.1025 0 0 0</pose>
+                <visual name='sphere_11 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0.001214107934117647 1</ambient>
+                        <diffuse>0 1 0.001214107934117647 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='sphere_11 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            <joint name="cylinder_11_to_sphere_11" type="universal">
+                <pose relative_to='sphere_11'>0 0 0 0 0 0</pose>
+                <child>sphere_11</child>
+                <parent>cylinder_11</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+
+
+            <link name="cylinder_12">
+                <pose relative_to='sphere_11'>0 0 -0.1025 0 0 0</pose>
+                <visual name='cylinder_12 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='cylinder_12 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <inertial>
+                    <mass>0.001</mass>
+                    <inertia>
+                        <ixx>0.01</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.01</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.01</izz>
+                    </inertia>
+                </inertial>
+            </link>
+            <joint name="sphere_11_to_cylinder_12" type="universal">
+                <pose relative_to='sphere_11'>0 0 0 0 0 0</pose>
+                <child>cylinder_12</child>
+                <parent>sphere_11</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+            <link name="sphere_12">
+                <pose relative_to='cylinder_12'>0 0 -0.1025 0 0 0</pose>
+                <visual name='sphere_12 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0.001214107934117647 1</ambient>
+                        <diffuse>0 1 0.001214107934117647 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='sphere_12 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            <joint name="cylinder_12_to_sphere_12" type="universal">
+                <pose relative_to='sphere_12'>0 0 0 0 0 0</pose>
+                <child>sphere_12</child>
+                <parent>cylinder_12</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+
+
+            <link name="cylinder_13">
+                <pose relative_to='sphere_12'>0 0 -0.1025 0 0 0</pose>
+                <visual name='cylinder_13 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='cylinder_13 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <inertial>
+                    <mass>0.001</mass>
+                    <inertia>
+                        <ixx>0.01</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.01</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.01</izz>
+                    </inertia>
+                </inertial>
+            </link>
+            <joint name="sphere_12_to_cylinder_13" type="universal">
+                <pose relative_to='sphere_12'>0 0 0 0 0 0</pose>
+                <child>cylinder_13</child>
+                <parent>sphere_12</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+            <link name="sphere_13">
+                <pose relative_to='cylinder_13'>0 0 -0.1025 0 0 0</pose>
+                <visual name='sphere_13 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0.001214107934117647 1</ambient>
+                        <diffuse>0 1 0.001214107934117647 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='sphere_13 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            <joint name="cylinder_13_to_sphere_13" type="universal">
+                <pose relative_to='sphere_13'>0 0 0 0 0 0</pose>
+                <child>sphere_13</child>
+                <parent>cylinder_13</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+
+
+            <link name="cylinder_14">
+                <pose relative_to='sphere_13'>0 0 -0.1025 0 0 0</pose>
+                <visual name='cylinder_14 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='cylinder_14 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <inertial>
+                    <mass>0.001</mass>
+                    <inertia>
+                        <ixx>0.01</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.01</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.01</izz>
+                    </inertia>
+                </inertial>
+            </link>
+            <joint name="sphere_13_to_cylinder_14" type="universal">
+                <pose relative_to='sphere_13'>0 0 0 0 0 0</pose>
+                <child>cylinder_14</child>
+                <parent>sphere_13</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+            <link name="sphere_14">
+                <pose relative_to='cylinder_14'>0 0 -0.1025 0 0 0</pose>
+                <visual name='sphere_14 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0.001214107934117647 1</ambient>
+                        <diffuse>0 1 0.001214107934117647 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='sphere_14 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            <joint name="cylinder_14_to_sphere_14" type="universal">
+                <pose relative_to='sphere_14'>0 0 0 0 0 0</pose>
+                <child>sphere_14</child>
+                <parent>cylinder_14</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+
+
+            <link name="cylinder_15">
+                <pose relative_to='sphere_14'>0 0 -0.1025 0 0 0</pose>
+                <visual name='cylinder_15 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient>
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='cylinder_15 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.0025</radius>
+                            <length>0.2</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+                <inertial>
+                    <mass>0.001</mass>
+                    <inertia>
+                        <ixx>0.01</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.01</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.01</izz>
+                    </inertia>
+                </inertial>
+            </link>
+            <joint name="sphere_14_to_cylinder_15" type="universal">
+                <pose relative_to='sphere_14'>0 0 0 0 0 0</pose>
+                <child>cylinder_15</child>
+                <parent>sphere_14</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
+            <link name="sphere_15">
+                <pose relative_to='cylinder_15'>0 0 -0.1025 0 0 0</pose>
+                <visual name='sphere_15 visual'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0.001214107934117647 1</ambient>
+                        <diffuse>0 1 0.001214107934117647 1</diffuse>
+                        <specular>0.1 0.1 0.1 1</specular>
+                        <emissive>0 0 0 1</emissive>
+                    </material>
+                </visual>
+                <collision name='sphere_15 collision'>
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <sphere>
+                            <radius>0.0025</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+            <joint name="cylinder_15_to_sphere_15" type="universal">
+                <pose relative_to='sphere_15'>0 0 0 0 0 0</pose>
+                <child>sphere_15</child>
+                <parent>cylinder_15</parent>
+                <axis>
+                    <xyz>0 1 0</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis>
+                <axis2>
+                    <xyz>0 0 1</xyz>
+                    <limit>
+                        <lower>-1.57</lower>
+                        <upper>1.57</upper>
+                    </limit>
+                    <dynamics>
+                        <damping>1.0</damping>
+                    </dynamics>
+                    <use_parent_model_frame>true</use_parent_model_frame>
+                </axis2>
+                <physics>
+                    <ode>
+                        <cfm_damping>1</cfm_damping>
+                    </ode>
+                </physics>
+            </joint>
